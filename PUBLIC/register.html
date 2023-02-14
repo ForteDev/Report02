@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+    <title>Coffee IT</title>
+    <style>
+        /* CSS Reset */
+        *{
+            box-sizing: border-box;
+            margin:0;
+            border: none;
+            padding:0;
+            font-size: 12px;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+        }
+        img{
+            width:100%;
+        }
+        /* Grid  */
+        .col01{width: 74px;}
+        .col02{width: 163px;}
+        .col03{width: 252px;}
+        .col04{width: 341px;}
+
+        #wrap{
+            box-sizing: border-box;
+            width:401px; 
+            height:796px;
+            margin: 0 auto;
+            padding: 0 30px 0 30px;
+            /* border: black 15px solid; */
+            /* background-image: url(./images/bg-img.jpg); */
+            /* background: linear-gradient(0deg,rgba(255,0,0,0.5) 40%, rgba(0,0,255,0.8) 80%); */
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        
+        .blind{
+            display: none;
+        }
+        header{
+            position: relative;
+            height: 60px;
+            padding-top: 10px;
+            /* background-color: red; */
+        }
+
+
+        .btn-prev{
+            width: 15px;
+            height: 15px;
+            border:4px solid #b97f67;
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            top:calc(50% - 9px);
+            transform: rotate(-45deg);
+            text-indent: -9999999px;
+        }
+        header h1{
+            font-family: 'Noto Sans KR';
+            font-size:23px;
+            font-weight: 400;
+            color: #b97f67;
+            text-align: center;
+        }
+
+        .sec-contents{
+            width:100%;
+        }
+        .input-blank{
+            padding-top: 50px;
+        }
+        .input-blank h3{
+            font-family: 'Noto Sans KR';
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+        }
+        .input-blank input{
+            padding-bottom: 2px;
+            margin-top: 20px;
+            border-bottom: 2px solid #b97f67;
+            background: none;
+            font-family: 'Noto Sans KR';
+            
+            font-size: 14px;
+        }
+        .certicifing{
+            padding-top: 10px;
+            float: right;
+        }
+        a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 14px;
+            color: #b97f67;
+        }
+        .account-btn div{
+            height: 55px;
+            margin: 0 15px 20px 0;
+            border-radius: 27px;
+            border: 2px solid #b97f67;
+            padding:12px;
+            background-color: #b97f67;
+            float:left;
+            text-align: center;
+        }
+        
+        footer{
+            padding-top: 75px;
+        }
+        footer div a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+        }
+        footer .inv{
+        background-color: #ffffff;
+        }
+        footer .inv a{
+            color: #b97f67;
+        }
+        .mr0{
+            margin-right: 0 !important;
+        }
+        footer p{
+            font-family: 'Noto Sans KR';
+            font-size: 14px;
+            font-weight: 400;
+            color: #555555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="./login.html" class="btn-prev">
+                이전
+            </a>
+            <h1>회원가입</h1>
+        </header>
+        <section>
+            <div class="sec-contents">
+                <div class="input-blank">
+                    <h3>아이디(Email)</h3>
+                    <input type="text" class="col04">
+                </div>
+                <div class="input-blank">
+                    <h3>비밀번호</h3>
+                    <input type="text" class="col04">
+                </div>
+                <div class="input-blank">
+                    <h3>비밀번호 확인</h3>
+                    <input type="text" class="col04">
+                </div>
+                <div class="certicifing">
+                    <a href="#">
+                        CHECK
+                    </a>
+                </div>
+                <div class="input-blank">
+                    <h3>이름</h3>
+                    <input type="text" class="col04">
+                </div>
+                <div class="input-blank">
+                    <h3>주민등록번호</h3>
+                    <input type="text" maxlength="6" class="col02">
+                    -
+                    <input type="password" maxlength="7" class="col02">
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="account-btn">
+                <div class="col04 inv">
+                    <a href="#">SUBMIT</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+    <title>Coffee IT</title>
+    <style>
+        #wrap{
+            box-sizing: border-box;
+            width:401px; 
+            height:796px;
+            margin: 0 auto;
+            padding: 0 30px 0 30px;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+        a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 14px;
+            color: #b97f67;
+        }
+        /* HEADER 설정 시작 */
+        header{
+            position: relative;
+            height: 60px;
+            padding-top: 10px;
+        }
+        header h1{
+            font-family: 'Noto Sans KR';
+            font-size:23px;
+            font-weight: 400;
+            color: #b97f67;
+            text-align: center;
+        }
+        .btn-prev{
+            width: 15px;
+            height: 15px;
+            border:4px solid #b97f67;
+            border-right: none;
+            border-bottom: none;
+            position: absolute;
+            top:calc(50% - 9px);
+            transform: rotate(-45deg);
+            text-indent: -9999999px;
+        }
+        /* HEADER 설정 끝 */
+        /* SECTION 설정 시작 */
+        section h2{
+            padding-top: 86px;
+            font-family: 'Noto Sans KR';
+            font-size:40px;
+            font-weight: 400;
+            color: #b97f67;
+        }
+        .sec-contents{
+            width:100%;
+            height: 484px;
+        }
+        .input-blank{
+            padding-top: 50px;
+        }
+        .input-blank h3{
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 400;
+            color: #333333;
+        }
+        .input-blank input{
+            padding-bottom: 2px;
+            margin-top: 20px;
+            border-bottom: 2px solid #b97f67;
+            background: none;
+            font-family: 'Noto Sans KR';
+            font-size: 14px;
+        }
+        .find-pass{
+            padding-top: 60px;
+            float: right;
+        }
+        .account-btn div{
+            height: 55px;
+            margin: 0 15px 20px 0;
+            border-radius: 27px;
+            border: 2px solid #b97f67;
+            padding:12px;
+            background-color: #b97f67;
+            float:left;
+            text-align: center;
+        }
+        /* SECTION 설정 끝 */
+        /* FOOTER 설정 시작 */
+        footer div a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+        }
+        footer .inv{
+        background-color: #ffffff;
+        }
+        footer .inv a{
+            color: #b97f67;
+        }
+        footer p{
+            font-family: 'Noto Sans KR';
+            font-size: 14px;
+            font-weight: 400;
+            color: #555555;
+            text-align: center;
+        }
+        /* FOOTER 설정 끝 */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <a href="./best.html" class="btn-prev">
+                이전
+            </a>
+            <h1>Login</h1>
+        </header>
+        <section>
+            <div class="sec-contents">
+                <h2>환영합니다</h2>
+                <div class="input-blank">
+                    <h3>Email</h3>
+                    <input type="text" class="col04">
+                </div>
+                <div class="input-blank">
+                    <h3>Password</h3>
+                    <input type="password" class="col04">
+                </div>
+                <div class="find-pass">
+                    <a href="./finding.html">
+                        패스워드 찾기
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="account-btn">
+                <div class="col04">
+                    <a href="#">Log In</a>
+                </div>
+            </div>
+            <p>회원이 아니신가요? <a href="./register.html">회원가입</a></p>
+        </footer>
+    </div>
+</body>
+</html>

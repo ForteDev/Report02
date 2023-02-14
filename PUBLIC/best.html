@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/default-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+    <!-- bx slider 플러그인 적용 -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <title>Coffee IT</title>
+    <style>
+        /* SECTION 설정 시작 */ 
+        .sec-contents{
+            width:100%;
+            height: 591px;
+
+        }
+        .img-box{
+            width: 100%;
+            height: 401px;
+            border-radius: 50px;
+            overflow: hidden;
+            position: relative;
+            background-color: red;
+        }
+        .img-box img{
+            width:200%;
+            max-width: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .bx-wrapper{
+            border-color:#f8e7d5 ;
+            background-color: #f8e7d5;
+        }
+        .text-banner{
+            margin-top: 50px;
+        }
+        .text-banner h1{
+            font-family: 'Noto Sans KR';
+            font-size: 30px;
+            font-weight: 700;
+            color: #8e736a;
+            line-height: 115%;
+            text-align: center;
+        }
+        /* SECTION 설정 끝 */ 
+        /* FOOTER 설정 시작 */ 
+        footer{
+            padding: 0 30px 0 30px;
+        }
+        .account-btn div{
+            height: 55px;
+            margin: 0 15px 20px 0;
+            border-radius: 27px;
+            border: 2px solid #b97f67;
+            padding:12px;
+            background-color: #b97f67;
+            float:left;
+            text-align: center;
+        }
+        footer div a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+        }
+        footer .inv{
+        background-color: #ffffff;
+        }
+        footer .inv a{
+            color: #b97f67;
+        }
+        .sns-btn{
+            height: 55px;
+            border-radius: 27px;
+            border: 2px solid #7199cc;
+            padding:13px;
+            float:left;
+            text-align: center;
+        }
+
+        .sns-btn a{
+            font-family: 'Noto Sans KR';
+            font-weight: 700;
+            font-size: 16px;
+            color: #7199cc;
+        }
+        .icon-box{
+            display: inline-block;
+            margin-right: 5px;
+            width: 12px;
+            height: 24px;
+            position: relative;
+        }
+        /* FOOTER 설정 끝 */ 
+    </style>
+    <script>
+        $( document ).ready( function() {
+          $( '.slider' ).bxSlider();
+        } );
+        $( document ).ready( function() {
+        $( '.slider' ).bxSlider( {
+        auto: true,
+        pause: 1000,
+        } );
+        } );
+      </script>
+</head>
+<body>
+    <div id="wrap">
+        <section>
+            <div class="sec-contents">
+                <div class="slider">
+                    <div class="img-box">
+                        <img src="./images/slider01.jpg" alt="슬라이더 이미지">
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/slider02.png" alt="슬라이더 이미지">
+                    </div>
+                    <div class="img-box">
+                        <img src="./images/slider03.jpg" alt="슬라이더 이미지">
+                    </div>
+                </div>
+                <div class="text-banner">
+                    <h1>지금 최고의 커피를<br>만나보세요</h1>
+                </div>
+                
+            </div>
+        </section>
+        <footer>
+            <div class="account-btn">
+                <div class="col02">
+                    <a href="./register.html">Register</a>
+                </div>
+                <div class="col02 inv mr0">
+                    <a href="./login.html">Log In</a>
+                </div>
+            </div>
+            <div class="sns-btn col04">
+                <a href="https://www.facebook.com/">
+                    <div class="icon-box">
+                        <img src="/images/facebook-f.svg" alt="페이스북 연결">
+                    </div>
+                    Connect with Facebook
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
